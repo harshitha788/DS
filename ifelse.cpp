@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 int main(){
     int marks;
     cout<<"enter the marks";
@@ -8,10 +11,11 @@ int main(){
     }
     else if(marks>80 && marks <90)
     {
-        cout<"B\n";
+        cout<<"B\n";
     }
-    else{
-        cout<"C;
+    else
+    {
+        cout<<"C\n";
     }
     return 0;
 }
