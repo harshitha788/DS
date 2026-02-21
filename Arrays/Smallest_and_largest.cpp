@@ -1,13 +1,15 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int nums[]={10,20,5,1,25};
+int main()
+{
+    int nums[] = {3, 5, 1, 8, 2};
     int size=5;
     int smallest=nums[0];
     int largest=nums[0];
     int small_index=0;
     int large_index=0;
-    for (int i=0;i<size;i++){
+    for (int i=0;i<size;i++)
+    {
         if(nums[i]<smallest){
             smallest=nums[i];
             small_index=i;
