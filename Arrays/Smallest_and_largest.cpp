@@ -5,13 +5,18 @@ int main(){
     int size=5;
     int smallest=nums[0];
     int largest=nums[0];
+    int small_index=0;
+    int large_index=0;
     for (int i=0;i<size;i++){
-        //if(nums[i]<smallest){
-          //  smallest=nums[i];
-        //}
-        smallest=min(smallest,nums[i]);
-        largest=max(largest,nums[i]);
+        if(nums[i]<smallest){
+            smallest=nums[i];
+            small_index=i;
+        }
+        if(nums[i]>largest){
+            largest=nums[i];
+            large_index=i;
+        }
     }
-    cout<<"smallest number is "<<smallest<<endl;
-    cout<<"largest number is "<<largest<<endl;
+    cout<<"smallest number is "<<smallest<<" at index "<<small_index<<endl;
+    cout<<"largest number is "<<largest<<" at index "<<large_index<<endl;
 }
